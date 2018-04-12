@@ -1,0 +1,312 @@
+#scene {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+#baggrund {
+    width: 100vw;
+    height: 51vw;
+    background-image: url(images/Baggrund_baggrund-01.svg);
+    background-size: 100%;
+}
+
+#mellemgrund {
+    width: 100vw;
+    height: 51vw;
+    background-image: url(images/Baggrund_mellemgrund-01.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#forgrund {
+    width: 100vw;
+    height: 51vw;
+    background-image: url(images/Baggrund_forgrund-01.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#trump_container {
+    position: absolute;
+    right: -20vw;
+    bottom: 6vw;
+}
+
+#trump_sprite {
+    background-image: url(images/Trump_spritesheet_udenfarve-05.svg);
+    background-size: 500% 400%;
+    width: 13vw;
+    height: 18.22vw;
+}
+
+.trump_move {
+    animation-name: trump_move_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes trump_move_kf {
+    0% {
+        right: -20vw;
+    }
+    100% {
+        right: 30vw;
+    }
+}
+
+.trump_gaer {
+    animation-duration: 1s;
+    animation-name: trump_gaer_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(5);
+}
+
+@keyframes trump_gaer_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -500% 0%;
+    }
+}
+
+.trump_stand {
+    animation-name: trump_stand_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes trump_stand_kf {
+    0% {
+        right: 30vw;
+    }
+    100% {
+        right: 30vw;
+    }
+}
+
+.trump_staer {
+    animation-duration: 1s;
+    animation-name: trump_staer_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+}
+
+@keyframes trump_staer_kf {
+    0% {
+        background-position: 0% -100%;
+    }
+    100% {
+        background-position: -100% -100%;
+    }
+}
+
+.trump_arms {
+    animation-name: trump_arms_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes trump_arms_kf {
+    0% {
+        right: 30vw;
+    }
+    100% {
+        right: 30vw;
+    }
+}
+
+.trump_arme {
+    animation-duration: 1s;
+    animation-name: trump_arme_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2);
+}
+
+@keyframes trump_arme_kf {
+    0% {
+        background-position: 0% -200%;
+    }
+    100% {
+        background-position: -200% -200%;
+    }
+}
+
+.trump_mood {
+    animation-name: trump_mood_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes trump_mood_kf {
+    0% {
+        right: 30vw;
+    }
+    100% {
+        right: 30vw;
+    }
+}
+
+.trump_humoer {
+    animation-duration: 1s;
+    animation-name: trump_humoer_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2);
+}
+
+@keyframes trump_humoer_kf {
+    0% {
+        background-position: 0% -300%;
+    }
+    100% {
+        background-position: -200% -300%;
+    }
+}
+
+#unicorn_container {
+    position: absolute;
+    left: 11vw;
+    bottom: 6vw;
+}
+
+#unicorn_sprite {
+    background-image: url(images/Unicorn_spritesheet_udenfarve-05.svg);
+    background-size: 600% 400%;
+    width: 18.23vw;
+    height: 26.04vw;
+}
+
+.unicorn_move {
+    animation-name: unicorn_right_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes unicorn_right_kf {
+    0% {
+        left: -20vw;
+    }
+    100% {
+        left: 11vw;
+    }
+}
+
+.unicorn_gaer {
+    animation-duration: 1s;
+    animation-name: unicorn_gaer_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+}
+
+@keyframes unicorn_gaer_kf {
+    0% {
+        background-position: 0% -300%;
+    }
+    100% {
+        background-position: -400% -300%;
+    }
+}
+
+.unicorn_wave {
+    animation-name: unicorn_wave_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes unicorn_wave_kf {
+    0% {
+        left: 11vw;
+    }
+    100% {
+        left: 11vw;
+    }
+}
+
+.unicorn_vinker {
+    animation-duration: 1s;
+    animation-name: unicorn_vinker_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2);
+}
+
+@keyframes unicorn_vinker_kf {
+    0% {
+        background-position: 0% -100%;
+    }
+    100% {
+        background-position: -200% -100%;
+    }
+}
+
+.unicorn_stand {
+    animation-name: unicorn_stand_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes unicorn_stand_kf {
+    0% {
+        left: 11vw;
+    }
+    100% {
+        left: 11vw;
+    }
+}
+
+.unicorn_staer {
+    animation-duration: 1s;
+    animation-name: unicorn_staer_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+}
+
+@keyframes unicorn_staer_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.unicorn_jump {
+    animation-name: unicorn_jump_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes unicorn_jump_kf {
+    0% {
+        left: 11vw;
+    }
+    100% {
+        left: 65vw;
+    }
+}
+
+.unicorn_hopper {
+    animation-duration: 1s;
+    animation-name: unicorn_hopper_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(6);
+}
+
+@keyframes unicorn_hopper_kf {
+    0% {
+        background-position: 0% -200%;
+    }
+    100% {
+        background-position: -600% -200%;
+    }
+}
